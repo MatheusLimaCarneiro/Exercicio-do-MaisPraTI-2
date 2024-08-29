@@ -14,11 +14,11 @@ const produtos = {
 
 const prompt = require("prompt-sync")();
 
-const filtrarPropriedade = function (obj, valorMinimo) {   //ele retorna um novo objeto contendo apenas as propriedades cujo valor é numérico e maior que o valor mínimo especificado.
+const filtrarPropriedade = function (obj, valorMinimo) {  
   let novoObjeto = {};
 
   for (let key in obj) {
-    if (typeof obj[key] === "number" && obj[key] > valorMinimo) {
+    if (obj[key] > valorMinimo) {
       novoObjeto[key] = obj[key];
     }
   }
