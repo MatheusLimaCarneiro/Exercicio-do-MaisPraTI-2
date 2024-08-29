@@ -6,11 +6,10 @@ valor seja maior que um valor específico. Use for in para filtrar as
 propriedades.
 */
 const produtos = {
-  marca: "Samsung",
-  preco: 4999.0,
-  modelo: "Galaxy S21",
-  peso: 169,
-  armazenamento: 128,
+  celular: 4900,
+  tablet: 3900,
+  notbook: 3500,
+  cpu: 3000
 };
 
 const prompt = require("prompt-sync")();
