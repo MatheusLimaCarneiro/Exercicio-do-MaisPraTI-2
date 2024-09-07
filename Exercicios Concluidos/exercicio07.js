@@ -6,33 +6,32 @@ os produtos e exibir o novo preço.
 */
 
 const produtos = [
-    {
-        nome: "Celular",
-        preco: 3000,
-        desconto: 0.10
-    },
-    {
-        nome: "Notebook",
-        preco: 5000,
-        desconto: 0.10
-    },
-    {
-        nome: "Mouse",
-        preco: 250,
-        desconto: 0.10
-    }
-]
+  {
+    nome: "Celular",
+    preco: 3000,
+    desconto: 0.1,
+  },
+  {
+    nome: "Notebook",
+    preco: 5000,
+    desconto: 0.1,
+  },
+  {
+    nome: "Mouse",
+    preco: 250,
+    desconto: 0.1,
+  },
+];
 
-const aplicarDesconto = function(produtos){
-    produtos.forEach(produto => {
-        const novoPreco = produto.preco - (produto.preco * 0.10)
-        console.log("-------------------")
-        console.log(`nome: ${produto.nome}`)
-        console.log(`Preço original: ${produto.preco}`)
-        console.log(`Novo preço: ${novoPreco}`)
-        console.log("-------------------")
-    })
-}
+const aplicarDesconto = function (produtos) {
+  produtos.forEach((produto) => {
+    const novoPreco = produto.preco - produto.preco * 0.1;
+    console.log("-------------------");
+    console.log(`nome: ${produto.nome}`);
+    console.log(`Preço original: ${produto.preco}`);
+    console.log(`Novo preço: ${novoPreco}`);
+    console.log("-------------------");
+  });
+};
 
-
-aplicarDesconto(produtos)
+aplicarDesconto(produtos);

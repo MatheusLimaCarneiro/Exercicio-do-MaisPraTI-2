@@ -6,30 +6,29 @@ contendo apenas os títulos dos filmes.
 */
 
 const filmes = [
-    {
-        titulo: "Homem-Aranha",
-        diretor: "Jeremias",
-        anoDeLançamento: 2002
-    },
-    {
-        titulo: "Deadpool & Wolwerine",
-        diretor: "Josias",
-        anoDeLançamento: 2024
-    },
-    {
-        titulo: "Sonic 3",
-        diretor: "Jacariass",
-        anoDeLançamento: 2024
-    },
-]
+  {
+    titulo: "Homem-Aranha",
+    diretor: "Jeremias",
+    anoDeLançamento: 2002,
+  },
+  {
+    titulo: "Deadpool & Wolwerine",
+    diretor: "Josias",
+    anoDeLançamento: 2024,
+  },
+  {
+    titulo: "Sonic 3",
+    diretor: "Jacariass",
+    anoDeLançamento: 2024,
+  },
+];
 
-const apenasTitulos = function(filmes){
-    let filmesTitulosArray = []
-    filmes.forEach(titulosFilmes => {
-        filmesTitulosArray.push(titulosFilmes.titulo)
-    }
-    )
-    console.log(filmesTitulosArray)
-}
+const apenasTitulos = function (filmes) {
+  let filmesTitulosArray = [];
+  filmes.forEach((titulosFilmes) => {
+    filmesTitulosArray.push(titulosFilmes.titulo);
+  });
+  console.log(filmesTitulosArray);
+};
 
-apenasTitulos(filmes)
+apenasTitulos(filmes);

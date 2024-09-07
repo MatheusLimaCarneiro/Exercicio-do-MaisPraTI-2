@@ -5,16 +5,16 @@ valores no console.
 */
 
 const carro = {
-    marca: "Chevrolet Onix,",
-    modelo: "Ltz",
-    ano: 2022,
-    cor: "Branco"
-}
+  marca: "Chevrolet Onix,",
+  modelo: "Ltz",
+  ano: 2022,
+  cor: "Branco",
+};
 
 const exibirConsole = function (obj) {
-    for( let key in obj){
-        console.log(`${key} : ${obj[key]}`)
-    }
-}
+  for (let key in obj) {
+    console.log(`${key} : ${obj[key]}`);
+  }
+};
 
-exibirConsole(carro)
+exibirConsole(carro);

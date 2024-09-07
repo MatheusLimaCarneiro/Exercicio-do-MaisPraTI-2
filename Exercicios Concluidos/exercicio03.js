@@ -9,12 +9,12 @@ const produtos = {
   celular: 4900,
   tablet: 3900,
   notbook: 3500,
-  cpu: 3000
+  cpu: 3000,
 };
 
 const prompt = require("prompt-sync")();
 
-const filtrarPropriedade = function (obj, valorMinimo) {  
+const filtrarPropriedade = function (obj, valorMinimo) {
   let novoObjeto = {};
 
   for (let key in obj) {
